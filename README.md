@@ -5,7 +5,7 @@ Random forest model on classic Titanics dataset, for C++ deployment
 * This is a feasibility study towards future development in leveraging machine learning models in developing quantitative trading strategies
 * Random forest model was chosen mainly because of its generally lower risk of over-fitting for small datasets, and it is great for performing feature-based analysis
 * Classic Titanics dataset is used for simplicity, 89% accuracy was recorded after minimal tuning hyper parameters
-* Model is first built in R, output to flat file, parsed with C++, and eventually compiled as `.dll` and imported into MQL4
+* Model is first built in R, output to flat file, embedded to C++, compiled as `.dll` and imported into MQL4
 * Applying multi-threading to further speed up the execution on C++
   
 ## Modelling in R
@@ -28,12 +28,18 @@ Random forest model on classic Titanics dataset, for C++ deployment
 ### Multi-threading
 * As MQL4 does not allow multi-threading, it will have to be done on C++. Following shows the difference in performance before and after:  
 <img src="https://user-images.githubusercontent.com/106392189/171875658-0c7c288d-0707-478a-87f9-bec1d6a608fe.JPG" alt="https://user-images.githubusercontent.com/106392189/171875658-0c7c288d-0707-478a-87f9-bec1d6a608fe.JPG" width="582" height="436"></img>
-<img src="https://user-images.githubusercontent.com/106392189/171876055-f51f8790-b7d5-4127-9858-23371ed94454.JPG" alt="https://user-images.githubusercontent.com/106392189/171876055-f51f8790-b7d5-4127-9858-23371ed94454.JPG" width="582" height="436"></img>
-
-
+<img src="https://user-images.githubusercontent.com/106392189/171876055-f51f8790-b7d5-4127-9858-23371ed94454.JPG" alt="https://user-images.githubusercontent.com/106392189/171876055-f51f8790-b7d5-4127-9858-23371ed94454.JPG" width="582" height="436"></img>  
+* After threaded, the program runs **38.4% faster**!
+  
+## Deploying on MT4
+* My final step in this feasibility study is to deploy it on trading platform (MetaTrader 4)
+* To facilitate mobility, the [model file](https://github.com/urinethrower/Project-Titanics/blob/main/titanic_RF.csv) has been embedded in `.rc`
+* The C++ file was then compiled into `.dll`, and imported to MQL4 by `#import "RF_parser.dll"`  
+![Capture](https://user-images.githubusercontent.com/106392189/171878518-4678613e-4c4b-4755-8019-001b6514a37c.JPG)  
+**Success!**
   
 ## Future directions
-* Inspired by PredictNow.ai (Dr. Ernest Chan) in leveraging ML to improve risk management
+* Inspired by PredictNow.ai (Dr. Ernest Chan), my next move would be leveraging ML to improve risk management in my algorithmic trading strategies
 * To perform feature-based time-series analysis for trading strategies
 * Develop algorithmic trading strategies around random forest model
   
