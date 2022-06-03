@@ -27,8 +27,8 @@ Random forest model on classic Titanics dataset, for C++ deployment
 
 ### Multi-threading
 * As MQL4 does not allow multi-threading, it will have to be done on C++. Following shows the difference in performance before and after:  
-<img src="https://user-images.githubusercontent.com/106392189/171875658-0c7c288d-0707-478a-87f9-bec1d6a608fe.JPG" alt="https://user-images.githubusercontent.com/106392189/171875658-0c7c288d-0707-478a-87f9-bec1d6a608fe.JPG" width="479" height="359"></img>
-<img src="https://user-images.githubusercontent.com/106392189/171876055-f51f8790-b7d5-4127-9858-23371ed94454.JPG" alt="https://user-images.githubusercontent.com/106392189/171876055-f51f8790-b7d5-4127-9858-23371ed94454.JPG" width="479" height="359"></img>
+<img src="https://user-images.githubusercontent.com/106392189/171875658-0c7c288d-0707-478a-87f9-bec1d6a608fe.JPG" alt="https://user-images.githubusercontent.com/106392189/171875658-0c7c288d-0707-478a-87f9-bec1d6a608fe.JPG" width="582" height="436"></img>
+<img src="https://user-images.githubusercontent.com/106392189/171876055-f51f8790-b7d5-4127-9858-23371ed94454.JPG" alt="https://user-images.githubusercontent.com/106392189/171876055-f51f8790-b7d5-4127-9858-23371ed94454.JPG" width="582" height="436"></img>
 
 
   
