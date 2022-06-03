@@ -15,10 +15,10 @@ Random forest model on classic Titanics dataset, with a C++ twist - inspired by 
 ![mtry](https://user-images.githubusercontent.com/106392189/171839746-6ba82794-5425-471a-842e-9f25d27a1173.png)
   
 * Sex (M/F) is the most important feature in prediction, which is in line with other ML models on this dataset:
-![variable_importance](https://user-images.githubusercontent.com/106392189/171839998-b61abc41-8ca8-4429-a9e7-d8d1aa07975b.png)
+![variable_importance](https://user-images.githubusercontent.com/106392189/171841472-1ef4d16e-7a55-4171-a61a-f2797e2e7fa0.png)
   
 * And this is the confusion matrix:
-![ConfusionMatrix](https://user-images.githubusercontent.com/106392189/171840101-1674f088-6ebd-4ad8-a669-016c9998df0b.png)
+![ConfusionMatrix](https://user-images.githubusercontent.com/106392189/171841501-3398e479-3406-4085-a0d0-7fc7933f2a8e.png)
   
 * Following my codes, the final step is the model export in `.csv`, uploaded [here](https://github.com/urinethrower/Project-Titanics/blob/main/titanic_RF.csv)
   
