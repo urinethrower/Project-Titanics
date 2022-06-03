@@ -4,7 +4,7 @@ require(dplyr)
 require(ggplot2)
 
 #Data feeding
-setwd("C:/Users/urinethrower/Desktop/ML/titanic")
+setwd("C:/Users/***/Desktop/ML/titanic")
 data <- read.csv("titanic.csv")
 data$Survived <- as.factor(data$Survived)
 data$Sex <- as.factor(data$Sex)
@@ -73,7 +73,6 @@ p + theme(axis.text.x=element_blank(),
 
 #Plot confusion matrix using caret package 
 draw_confusion_matrix <- function(cm) {
-  
   layout(matrix(c(1,1,2)))
   par(mar=c(2,2,2,2))
   plot(c(100, 345), c(300, 450), type = "n", xlab="", ylab="", xaxt='n', yaxt='n')
@@ -123,6 +122,6 @@ draw_confusion_matrix(cm1)
 for(i in 1:10){
   export <- (getTree(model, i, labelVar=FALSE))
   export <- cbind("#"=paste("#",i,sep=""), export)
-  write.table(export,"C:\\Users\\urinethrower\\Desktop\\titanic_RF.csv",
+  write.table(export,"C:\\Users\\***\\Desktop\\titanic_RF.csv",
               row.names=FALSE, sep = ",", append = TRUE, col.names = FALSE)
 }
