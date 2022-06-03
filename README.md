@@ -1,5 +1,5 @@
 # Project-Titanics
-Random forest model on classic Titanics dataset: build in R, executed in C++
+Random forest model on classic Titanics dataset: built in R, executed in C++
   
 ## Overview
 * This is a feasibility study towards leveraging machine learning models in quantitative trading in the future
