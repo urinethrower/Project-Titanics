@@ -35,9 +35,9 @@ Random forest model on classic Titanics dataset, for C++ deployment
 * My final step in this feasibility study is to deploy it on trading platform (MetaTrader 4)
 * To facilitate mobility, the [model file](https://github.com/urinethrower/Project-Titanics/blob/main/titanic_RF.csv) has been embedded in `.rc`
 * The C++ file was then compiled into `.dll`, and imported to MQL4 by `#import "RF_parser.dll"`  
-<img src="https://user-images.githubusercontent.com/106392189/171880765-0d48ab92-42b3-4826-9c1a-e052eb6dee51.JPG" alt="https://user-images.githubusercontent.com/106392189/171880765-0d48ab92-42b3-4826-9c1a-e052eb6dee51.JPG" width="518" height="366"></img>  
+<img src="https://user-images.githubusercontent.com/106392189/171881992-f11644e2-2371-4a52-830e-ff16c9fec0b0.JPG" alt="https://user-images.githubusercontent.com/106392189/171881992-f11644e2-2371-4a52-830e-ff16c9fec0b0.JPG" width="518" height="366"></img>  
 **Success!**
-  
+
 ## Future directions
 * Inspired by PredictNow.ai (Dr. Ernest Chan), my next move would be leveraging ML to improve risk management in my algorithmic trading strategies
 * To perform feature-based time-series analysis for trading strategies
