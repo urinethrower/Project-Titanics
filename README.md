@@ -31,7 +31,7 @@ Random forest model on classic Titanics dataset, for C++ deployment
 <img src="https://user-images.githubusercontent.com/106392189/171876055-f51f8790-b7d5-4127-9858-23371ed94454.JPG" alt="https://user-images.githubusercontent.com/106392189/171876055-f51f8790-b7d5-4127-9858-23371ed94454.JPG" width="582" height="436"></img>  
 * After threaded, the program runs **38.4% faster**!
   
-## Deploying on MT4
+## Running the model on MT4
 * My final step in this feasibility study is to deploy it on trading platform (MetaTrader 4)
 * To facilitate mobility, the [model file](https://github.com/urinethrower/Project-Titanics/blob/main/titanic_RF.csv) has been embedded in `.rc`
 * The C++ file was then compiled into `.dll`, and imported to MQL4 by `#import "RF_parser.dll"`  
