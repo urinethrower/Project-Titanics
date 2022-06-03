@@ -2,7 +2,6 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
-//#include <algorithm>
 #include <time.h>
 
 int main() {
@@ -41,7 +40,6 @@ int main() {
             int n = 0;
             while(std::getline(lineStream,cell,','))
             {
-                //cell.erase(std::remove(cell.begin(), cell.end(), '"'), cell.end());
                 parsedRow[n] = cell;
                 if(n<7){n++;}
             }
@@ -67,7 +65,7 @@ int main() {
     {
         int left_split = stoi((parsedCsv[i])[1]) - 1;
         int right_split = stoi((parsedCsv[i])[2]) - 1;
-        int predictor = stoi((parsedCsv[i])[3]) - 1; //array position of the node's split variable
+        int predictor = stoi((parsedCsv[i])[3]) - 1; //array position of RF node's split variable
         double split_point = std::stod((parsedCsv[i])[4]);
 
         if(predictor == -1){result = stoi((parsedCsv[i])[6]);} //when leaf node is reached
@@ -75,7 +73,7 @@ int main() {
         else{i = right_split;} //right split
     }//End of individual tree
     
-    prediction += result - 1; //extra "-1" as: 0/fail --> result=1; 1/survive --> result=2
+    prediction += result - 1; //extra "-1" as: {0,fail-->result=1}; {1,survive-->result=2}
     
     }//End of running through entire forest
 
