@@ -2,7 +2,7 @@
 Random forest model on classic Titanics dataset: built in R, executed in C++
   
 ## Overview
-* This is a feasibility study towards leveraging machine learning models in quantitative trading in the future
+* This is a feasibility study towards leveraging machine learning models in quantitative trading
 * Random forest model was chosen mainly because of its generally lower risk of over-fitting for small datasets, and it is great for performing feature-based analysis
 * Classic Titanics dataset is used for simplicity, 89% accuracy was recorded after minimal tuning hyper parameters
 * Model is first built in R, output to flat file, embedded to C++, compiled as `.dll` and imported into MQL4
