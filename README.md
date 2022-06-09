@@ -23,7 +23,7 @@ Random forest model on classic Titanics dataset: built in R, executed in C++
   
 ## Parsing with C++
 * Exported model from R was pre-formatted for parsing, which makes the process relatively painless
-* My primary version, runs on terminal after compiled, can be referred to [here](https://github.com/urinethrower/Project-Titanics/blob/main/treerunner.cpp)
+* My primary version, runs on terminal, can be referred to [here](https://github.com/urinethrower/Project-Titanics/blob/main/treerunner.cpp)
 
 ### Multi-threading
 * As MQL4 does not allow multi-threading, it will have to be done on C++. Following shows the difference in performance before and after:  
