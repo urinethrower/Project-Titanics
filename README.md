@@ -9,7 +9,7 @@ Random forest model on classic Titanics dataset: built in R, executed in C++
 * Applying multi-threading to further speed up the execution on C++
   
 ## Modelling in R
-* Dataset was downloaded from [Kaggle](https://www.kaggle.com/c/titanic), I have uploaded [here](https://github.com/urinethrower/Project-Titanics/blob/main/titanic.csv)
+* Dataset was downloaded from [Kaggle](https://www.kaggle.com/c/titanic), I have uploaded [HERE](https://github.com/urinethrower/Project-Titanics/blob/main/titanic.csv)
 * Dataset was parted into training and testing sets, to avoid over-fitting
 * Hyper perameters like mtry and ntrees are visualised and tuned accordingly:
 ![ntrees](https://user-images.githubusercontent.com/106392189/171839711-84ca8a9b-58d0-457f-ac22-7ef443f000e5.png)
@@ -23,7 +23,7 @@ Random forest model on classic Titanics dataset: built in R, executed in C++
   
 ## Parsing with C++
 * Exported model from R was pre-formatted for parsing, which makes the process relatively painless
-* My primary version, runs on terminal, can be referred to [here](https://github.com/urinethrower/Project-Titanics/blob/main/treerunner.cpp)
+* My primary version, runs on terminal, can be referred to [HERE](https://github.com/urinethrower/Project-Titanics/blob/main/treerunner.cpp)
 
 ### Multi-threading
 * As MQL4 does not allow multi-threading, it will have to be done on C++. Following shows the difference in performance before and after:  
